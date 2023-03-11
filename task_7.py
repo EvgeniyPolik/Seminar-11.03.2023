@@ -10,3 +10,8 @@
 123456 -> no
 """
 
+ticket_number_split = [int(i) for i in input('Введите номер билета: ')]
+if sum(ticket_number_split[:3]) == sum(ticket_number_split[3:]):
+	print('yes')
+else:
+	print('no')

@@ -9,3 +9,11 @@
 60 -> 10  40  10
 """
 
+crane_count = int(input('Введите количество сделанных журавликов: '))
+if crane_count % 6 == 0:
+	kate_make = int((crane_count / 3) * 2)
+	boy_make = int(kate_make / 4)
+	print(f'Петя сделал {boy_make} журавликов, Катя сделала {kate_make} журавликов, '
+	      f'Сережа сделал {boy_make} журавликов')
+else:
+	print('Ввод не подходит под условия задачи')

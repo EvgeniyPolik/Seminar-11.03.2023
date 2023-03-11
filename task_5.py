@@ -7,3 +7,10 @@
 100 -> 1 (1 + 0 + 0)
 """
 
+n = int(input('Введите n: '))
+sum_digits = 0
+while n > 0:
+	sum_digits += n % 10
+	n //= 10
+
+print(f'Сумма всех цифр в указанном числе: {sum_digits}')

@@ -20,3 +20,12 @@
 
 """
 
+receipt = int(input('Введите выручку фирмы: '))
+expense = int(input('Введите издержки фирмы: '))
+if receipt > expense:
+	print(f'Финансовый результат - прибыль. Ее величина: {receipt - expense}')
+	print(f'Рентабельность выручки = {expense/receipt}')
+	staff_count = int(input('Введите численность персонала: '))
+	print(f'Прибыль фирмы в расчете на одного сотрудника = {(receipt- expense) / staff_count}')
+else:
+	print(f'Финансовый результат - убыток. Его величина: {expense - receipt}')
